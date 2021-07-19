@@ -3,7 +3,7 @@ requires = ["flit_core >=3.0.0,<4"]
 build-backend = "flit_core.buildapi"
 
 [tool.flit.metadata]
-module="pydirutils"
+module="pyenvutils"
 author="Doug Ransom"
 author-email="doug@ransom.vip"
 home-page="https://github.com/dougransom/pydirutils"
@@ -11,18 +11,28 @@ description-file="README.md"
 
 requires=[
 ]
-requires-python=">=3.0"
+requires-python=">=3.3"
 classifiers=[
     "Intended Audience :: Developers",
     "Programming Language :: Python :: 3",
     "Topic :: Software Development :: Libraries :: Python Modules",
 	"Development Status :: 4 - Beta"
 ]
-keywords="python,directories,sys,site,shell"
+keywords="python,directories,sys,site,shell,environment"
 
 
 [tool.flit.scripts]
-croesus_to_nbin_tradelist = "nbin_golf.croesus_to_nbin_tradelist:main"
-
-[tool.flit.entrypoints."pygments.lexers"]
-dogelang = "dogelang.lexer:DogeLexer"
+pyd_prefix = ":prefix"
+pyd_base_prefix = "sys:base_prefix"
+pyd_exec_prefix="sys:exec_prefix"
+pyd_executable = "sys:executable"
+pyd_float_info="sys:float_info"
+pyd_hash_info="sys:hash_info"
+pyd_hex_version="sys:hexversion"
+pyd_implementation="sys:implementation"
+pyd_int_info="sys:int_info"
+pyd_path="sys:path"
+pyd_platform="sys:platform"
+pyd_platlibdir="sys:sys.platlibdir"
+pyd_version_inf="sys:version_info"
+pyd_winver="sys:winver"

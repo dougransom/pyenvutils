@@ -20,7 +20,6 @@ classifiers=[
 ]
 keywords="python,directories,sys,site,shell,environment"
 
-
 [tool.flit.scripts]
 pye_sysconfig="sysconfig:_main"
 pye_scripts ="pyenvutils.pyenvutils:scripts"

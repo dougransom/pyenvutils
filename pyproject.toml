@@ -25,4 +25,4 @@ keywords="python,directories,sys,site,shell"
 croesus_to_nbin_tradelist = "nbin_golf.croesus_to_nbin_tradelist:main"
 
 [tool.flit.entrypoints."pygments.lexers"]
-dogelang = "dogelang.lexer:DogeLexer":
+dogelang = "dogelang.lexer:DogeLexer"

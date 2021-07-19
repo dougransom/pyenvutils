@@ -16,23 +16,30 @@ classifiers=[
     "Intended Audience :: Developers",
     "Programming Language :: Python :: 3",
     "Topic :: Software Development :: Libraries :: Python Modules",
-	"Development Status :: 4 - Beta"
+	Development Status :: 5 - Production/Stable
 ]
 keywords="python,directories,sys,site,shell,environment"
 
 
 [tool.flit.scripts]
-pyd_prefix = ":prefix"
-pyd_base_prefix = "sys:base_prefix"
-pyd_exec_prefix="sys:exec_prefix"
-pyd_executable = "sys:executable"
-pyd_float_info="sys:float_info"
-pyd_hash_info="sys:hash_info"
-pyd_hex_version="sys:hexversion"
-pyd_implementation="sys:implementation"
-pyd_int_info="sys:int_info"
-pyd_path="sys:path"
-pyd_platform="sys:platform"
-pyd_platlibdir="sys:sys.platlibdir"
-pyd_version_inf="sys:version_info"
-pyd_winver="sys:winver"
+pye_sysconfig="sysconfig:_main"
+pye_scripts ="pyenvutils.pyenvutils:scripts"
+pye_data ="pyenvutils.pyenvutils:data"
+pye_platinclude ="pyenvutils.pyenvutils:platinclude"
+pye_include ="pyenvutils.pyenvutils:include"
+pye_purelib ="pyenvutils.pyenvutils:purelib"
+pye_platlib="pyenvutils.pyenvutils:platlib"
+pye_stdlib="pyenvutils.pyenvutils:stdlib"
+pye_prefix = "pyenvutils.pyenvutils:prefix"
+pye_base_prefix = "pyenvutils.pyenvutils:base_prefix"
+pye_exec_prefix="pyenvutils.pyenvutils:exec_prefix"
+pye_executable = "pyenvutils.pyenvutils:executable"
+pye_float_info="pyenvutils.pyenvutils:float_info"
+pye_hash_info="pyenvutils.pyenvutils:hash_info"
+pye_hex_version="pyenvutils.pyenvutils:hexversion"
+pye_implementation="pyenvutils.pyenvutils:implementation"
+pye_int_info="pyenvutils.pyenvutils:int_info"
+pye_path="pyenvutils.pyenvutils:path"
+pye_platform="pyenvutils.pyenvutils:platform"
+pye_version_info="pyenvutils.pyenvutils:version_info"
+pye_winver="pyenvutils.pyenvutils:winver"

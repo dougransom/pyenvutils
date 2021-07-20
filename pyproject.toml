@@ -3,7 +3,7 @@ requires = ["flit_core >=3.0.0,<4"]
 build-backend = "flit_core.buildapi"
 
 [tool.flit.metadata]
-module="pydirutils"
+module="pyenvutils"
 author="Doug Ransom"
 author-email="doug@ransom.vip"
 home-page="https://github.com/dougransom/pydirutils"
@@ -11,18 +11,34 @@ description-file="README.md"
 
 requires=[
 ]
-requires-python=">=3.0"
+requires-python=">=3.3"
 classifiers=[
     "Intended Audience :: Developers",
     "Programming Language :: Python :: 3",
     "Topic :: Software Development :: Libraries :: Python Modules",
-	"Development Status :: 4 - Beta"
+	"Development Status :: 5 - Production/Stable"
 ]
-keywords="python,directories,sys,site,shell"
-
+keywords="python,directories,sys,site,shell,environment"
 
 [tool.flit.scripts]
-croesus_to_nbin_tradelist = "nbin_golf.croesus_to_nbin_tradelist:main"
-
-[tool.flit.entrypoints."pygments.lexers"]
-dogelang = "dogelang.lexer:DogeLexer":
+pye_sysconfig="sysconfig:_main"
+pye_scripts ="pyenvutils.pyenvutils:scripts"
+pye_data ="pyenvutils.pyenvutils:data"
+pye_platinclude ="pyenvutils.pyenvutils:platinclude"
+pye_include ="pyenvutils.pyenvutils:include"
+pye_purelib ="pyenvutils.pyenvutils:purelib"
+pye_platlib="pyenvutils.pyenvutils:platlib"
+pye_stdlib="pyenvutils.pyenvutils:stdlib"
+pye_prefix = "pyenvutils.pyenvutils:prefix"
+pye_base_prefix = "pyenvutils.pyenvutils:base_prefix"
+pye_exec_prefix="pyenvutils.pyenvutils:exec_prefix"
+pye_executable = "pyenvutils.pyenvutils:executable"
+pye_float_info="pyenvutils.pyenvutils:float_info"
+pye_hash_info="pyenvutils.pyenvutils:hash_info"
+pye_hex_version="pyenvutils.pyenvutils:hexversion"
+pye_implementation="pyenvutils.pyenvutils:implementation"
+pye_int_info="pyenvutils.pyenvutils:int_info"
+pye_path="pyenvutils.pyenvutils:path"
+pye_platform="pyenvutils.pyenvutils:platform"
+pye_version_info="pyenvutils.pyenvutils:version_info"
+pye_winver="pyenvutils.pyenvutils:winver"

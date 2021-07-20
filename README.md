@@ -111,7 +111,7 @@ Each command is shown below, and sample output for a Python installed at "C:\pyt
 ### pye_platlib 
 ```c:\python38-32\Lib\site-packages```
 
-### pye_stdlib="pyenvutils.pyenvutils:stdlib"
+### pye_stdlib
 ```c:\python38-32\Lib```
 
 ### pye_prefix  

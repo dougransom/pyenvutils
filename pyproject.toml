@@ -6,7 +6,7 @@ build-backend = "flit_core.buildapi"
 module="pyenvutils"
 author="Doug Ransom"
 author-email="doug@ransom.vip"
-home-page="https://github.com/dougransom/pydirutils"
+home-page="https://github.com/dougransom/pyenvutils"
 description-file="README.md"
 
 requires=[
